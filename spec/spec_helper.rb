@@ -1,4 +1,5 @@
 require "bundler/setup"
+require 'support/coverage'
 require "awesome_toy_robot_simulator"
 
 RSpec.configure do |config|
