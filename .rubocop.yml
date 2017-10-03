@@ -1,0 +1,19 @@
+AllCops:
+  Exclude:
+    - '*.gemspec'
+    - 'tasks/*.rake'
+    - 'Rakefile'
+  TargetRubyVersion: 2.4.1
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']
+
+Metrics/LineLength:
+  Max: 100
+
+Style/Documentation:
+  Enabled: false
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
