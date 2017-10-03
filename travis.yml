@@ -1,0 +1,12 @@
+sudo: false
+dist: trusty
+cache: bundler
+language: ruby
+bundler_args: --without debugging
+script: bundle exec rake ci
+rvm:
+  - 2.4
+before_install:
+  - rvm use @global
+  - gem uninstall bundler -x
+  - bundler --version
