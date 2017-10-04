@@ -1,4 +1,4 @@
-# Awesome Toy Robot Simulator Test Resolution
+# Awesome Toy Robot Simulator Test Resolution [![Build Status](https://travis-ci.org/tiarly/awesome_toy_robot_simulator.svg?branch=develop)](https://travis-ci.org/tiarly/awesome_toy_robot_simulator)
 
 [![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
