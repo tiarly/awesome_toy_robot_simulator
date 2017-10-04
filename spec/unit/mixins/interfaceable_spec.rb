@@ -5,11 +5,11 @@ require 'spec_helper'
 module AwesomeToyRobotSimulator
   RSpec.describe Interfaceable do
     class DummyInterfaceable
-      include Interfaceable
+      extend Interfaceable
     end
 
     describe '.start' do
-      subject { DummyInterfaceable.new.start(nil) }
+      subject { DummyInterfaceable.start(nil) }
 
       it 'raises NotImplementedError' do
         expect { subject }.to raise_error NotImplementedError

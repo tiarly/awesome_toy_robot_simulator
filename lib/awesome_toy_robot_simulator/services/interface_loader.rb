@@ -8,7 +8,7 @@ module AwesomeToyRobotSimulator
   class InterfaceLoader
     INTERFACES = {
       cli: Interfaces::CLI,
-      file: Interfaces::File,
+      file: Interfaces::File
     }.freeze
 
     class << self

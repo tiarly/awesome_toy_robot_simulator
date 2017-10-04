@@ -5,10 +5,12 @@ require_relative '../mixins/interfaceable'
 module AwesomeToyRobotSimulator
   module Interfaces
     class CLI
-      include Interfaceable
+      extend Interfaceable
 
-      def start(_)
-        #@TODO
+      class << self
+        def start(_)
+          raise NotImplementedError
+        end
       end
     end
   end
