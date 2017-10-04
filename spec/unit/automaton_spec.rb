@@ -8,6 +8,22 @@ module AwesomeToyRobotSimulator
     let(:table) { Tabletop.new(5, 5) }
     let(:robot) { ToyRobot.new(table) }
 
+    describe '.report' do
+      subject { instance.report }
+
+      let(:position) { Position.new(2, 3) }
+      let(:direction) { Direction.new('north') }
+
+      before do
+        allow(instance).to receive(:position).and_return(position)
+        allow(instance).to receive(:direction).and_return(direction)
+      end
+
+      it 'returns the current toy robot report' do
+        is_expected.to eql '2,3,NORTH'
+      end
+    end
+
     describe '.step_forward' do
       subject { instance.step_forward }
 

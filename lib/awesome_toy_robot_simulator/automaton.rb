@@ -4,6 +4,10 @@ require 'delegate'
 
 module AwesomeToyRobotSimulator
   class Automaton < SimpleDelegator
+    def report
+      [position.x_axis, position.y_axis, direction].join(',')
+    end
+
     def step_forward
       new_position = direction.step_forward(position)
 

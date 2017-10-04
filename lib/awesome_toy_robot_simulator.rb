@@ -1,6 +1,11 @@
 # frozen_string_literal: true
 
 require 'awesome_toy_robot_simulator/automaton'
+require 'awesome_toy_robot_simulator/commands/left'
+require 'awesome_toy_robot_simulator/commands/move'
+require 'awesome_toy_robot_simulator/commands/place'
+require 'awesome_toy_robot_simulator/commands/report'
+require 'awesome_toy_robot_simulator/commands/right'
 require 'awesome_toy_robot_simulator/direction'
 require 'awesome_toy_robot_simulator/directions/north'
 require 'awesome_toy_robot_simulator/directions/east'

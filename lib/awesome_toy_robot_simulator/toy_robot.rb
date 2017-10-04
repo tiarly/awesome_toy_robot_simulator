@@ -25,7 +25,7 @@ module AwesomeToyRobotSimulator
       instance_variable_set(attr, value)
     end
 
-    def_delegators :automaton, :step_forward, :turn_left, :turn_right
+    def_delegators :automaton, :report, :step_forward, :turn_left, :turn_right
 
     private
 
