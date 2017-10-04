@@ -4,6 +4,8 @@
 
 This is an attempt to solve the given imaginary problem.
 
+![Gem usage](docs/awesome_toy_robot_simulator.gif)
+
 ## Description
 
 * The application is a simulation of a toy robot moving on a square tabletop,
@@ -65,9 +67,32 @@ Or install it yourself as:
 
     $ gem install awesome_toy_robot_simulator
 
-## Usage
+## Technical Stack
 
-TODO: Write usage instructions here
+The reason why I chose to go with gem was basically for nicety of an
+easy installation for whoever is trying to make use of our ToyRobot
+Simulator. Not to mention the fact that it can be also used
+alongside in another app as a new dependency. I have tried to write
+this test solution in way that can provide scalabiliy for new upcoming
+features, and to also ensure readability, by creating small classes
+with basic responsabilities. That way, it can follow a more smoothly
+onboarding process.
+
+This gems is using the follwing gems for self support:
+
+ - bundler (our default dependency manager)
+ - pry (for testing purposes only)
+ - simplecov (for increase/ensure test coverage)
+ - rake (for creating our custom rake tasks)
+ - reek (for adding nice linting for code smells)
+ - rspec (our BDD testing gem)
+ - rubocop (same as reek, but for more general syntax rules)
+
+## Usage
+To run our AwesomeToyRobotSimulator, just install the gem, and run:
+
+    $ awesome_toy_robot_simulator path_for_the_given_file_to_be_processed
+
 
 ## Development
 
