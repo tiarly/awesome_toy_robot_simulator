@@ -8,6 +8,10 @@ AllCops:
 Metrics/BlockLength:
   ExcludedMethods: ['describe', 'context']
 
+Metrics/ModuleLength:
+  Exclude:
+    - '**/*_spec.rb'
+
 Metrics/LineLength:
   Max: 100
 
