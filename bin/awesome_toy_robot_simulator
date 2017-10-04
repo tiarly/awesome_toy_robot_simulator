@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler/setup'
+require 'awesome_toy_robot_simulator'
+
+puts 'Welcome to the AwesomeToyRobotSimulator Gem, enjoy!'
+
+file = ARGV.last
+
+raise 'You need to provide a file so we can properly start the robot simulator!' unless file
+
+AwesomeToyRobotSimulator::Runner.run(options: { file: file })
