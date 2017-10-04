@@ -2,8 +2,9 @@
 
 module AwesomeToyRobotSimulator
   class Tabletop
-    MINIMAL_TABLE_WIDTH = 0
+    DEFAULT_TABLE_SIZES = [5, 5].freeze
     MINIMAL_TABLE_HEIGHT = 0
+    MINIMAL_TABLE_WIDTH = 0
 
     def initialize(width, height)
       @width = width
